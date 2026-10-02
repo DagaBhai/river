@@ -795,8 +795,6 @@
       
         
       
-        
-      
     
     
     
@@ -969,6 +967,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -987,7 +991,7 @@
   
   
   
-    <a href="../../base/Base/" class="md-nav__link">
+    <a href="../../base/AnomalyDetector/" class="md-nav__link">
       
   
   
@@ -2565,6 +2569,8 @@
       
         
       
+        
+      
     
     
     
@@ -3986,6 +3992,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -4177,12 +4187,13 @@
 <ul>
 <li>
 <p><strong>events</strong></p>
-<p><em>Type</em> → <code>dict | list | None</code></p>
+<p><em>Type</em> → <code>dict[typing.Any, int] | list[typing.Any] | None</code></p>
 <p><em>Default</em> → <code>None</code></p>
 <p>An optional list of events that already occurred.</p>
 </li>
 <li>
 <p><strong>seed</strong></p>
+<p><em>Type</em> → <code>int | None</code></p>
 <p><em>Default</em> → <code>None</code></p>
 <p>Random number generator seed for reproducibility.</p>
 </li>
@@ -4286,7 +4297,7 @@ P(red) = 0.000
 <p>Probability mass/density function.</p>
 <p><strong>Parameters</strong></p>
 <ul>
-<li><strong>x</strong>     — <code>typing.Any</code>    </li>
+<li><strong>x</strong>     — <code>typing.Hashable</code>    </li>
 </ul>
 </details>
 <p><span /></p>

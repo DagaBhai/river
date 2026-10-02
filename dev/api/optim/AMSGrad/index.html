@@ -795,8 +795,6 @@
       
         
       
-        
-      
     
     
     
@@ -969,6 +967,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -987,7 +991,7 @@
   
   
   
-    <a href="../../base/Base/" class="md-nav__link">
+    <a href="../../base/AnomalyDetector/" class="md-nav__link">
       
   
   
@@ -2556,6 +2560,8 @@
   
     
     
+      
+        
       
         
       
@@ -4493,6 +4499,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -4701,18 +4711,22 @@
 </li>
 <li>
 <p><strong>beta_1</strong></p>
+<p><em>Type</em> → <code>float</code></p>
 <p><em>Default</em> → <code>0.9</code></p>
 </li>
 <li>
 <p><strong>beta_2</strong></p>
+<p><em>Type</em> → <code>float</code></p>
 <p><em>Default</em> → <code>0.999</code></p>
 </li>
 <li>
 <p><strong>eps</strong></p>
+<p><em>Type</em> → <code>float</code></p>
 <p><em>Default</em> → <code>1e-08</code></p>
 </li>
 <li>
 <p><strong>correct_bias</strong></p>
+<p><em>Type</em> → <code>bool</code></p>
 <p><em>Default</em> → <code>True</code></p>
 </li>
 </ul>
@@ -4755,7 +4769,7 @@
 <p>Parameters:     w (dict): A dictionary of weight parameters. The weights are modified in-place.  Returns:     The updated weights.</p>
 <p><strong>Parameters</strong></p>
 <ul>
-<li><strong>w</strong>     — <code>dict</code>    </li>
+<li><strong>w</strong>     — <code>DictLike | VectorLike</code>    </li>
 </ul>
 </details>
 <p><span /></p>
@@ -4764,11 +4778,11 @@
 <p>Updates a weight vector given a gradient.</p>
 <p><strong>Parameters</strong></p>
 <ul>
-<li><strong>w</strong>     — <code>dict | VectorLike</code>    </li>
-<li><strong>g</strong>     — <code>dict | VectorLike</code>    </li>
+<li><strong>w</strong>     — <code>DictLike | VectorLike</code>    </li>
+<li><strong>g</strong>     — <code>DictLike | VectorLike</code>    </li>
 </ul>
 <p><strong>Returns</strong></p>
-<p><code>dict | VectorLike</code>:     The updated weights.</p>
+<p><code>DictLike | VectorLike</code>:     The updated weights.</p>
 </details>
 <p><span /></p>
 <h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>

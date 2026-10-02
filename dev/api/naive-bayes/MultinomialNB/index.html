@@ -795,8 +795,6 @@
       
         
       
-        
-      
     
     
     
@@ -969,6 +967,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -987,7 +991,7 @@
   
   
   
-    <a href="../../base/Base/" class="md-nav__link">
+    <a href="../../base/AnomalyDetector/" class="md-nav__link">
       
   
   
@@ -2567,6 +2571,8 @@
       
         
       
+        
+      
     
     
     
@@ -2625,6 +2631,33 @@
     
   
   BernoulliNB
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CategoricalNB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  CategoricalNB
 
     
   </span>
@@ -3936,6 +3969,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -4250,10 +4287,10 @@ dtype: object
 <p>Computes the joint log likelihood of input features.</p>
 <p><strong>Parameters</strong></p>
 <ul>
-<li><strong>X</strong>     — <code>pd.DataFrame</code>    </li>
+<li><strong>X</strong>     — <code>IntoDataFrame</code>    </li>
 </ul>
 <p><strong>Returns</strong></p>
-<p><code>pd.DataFrame</code>:     Input samples joint log likelihood.</p>
+<p><code>IntoDataFrame</code>:     Input samples joint log likelihood.</p>
 </details>
 <p><span /></p>
 <details class="- abstract">
@@ -4261,8 +4298,8 @@ dtype: object
 <p>Learn from a batch of count vectors.</p>
 <p><strong>Parameters</strong></p>
 <ul>
-<li><strong>X</strong>     — <code>pd.DataFrame</code>    </li>
-<li><strong>y</strong>     — <code>pd.Series</code>    </li>
+<li><strong>X</strong>     — <code>IntoDataFrame</code>    </li>
+<li><strong>y</strong>     — <code>IntoSeries</code>    </li>
 </ul>
 </details>
 <p><span /></p>
@@ -4290,7 +4327,7 @@ dtype: object
 <p>Predict the outcome for each given sample.</p>
 <p><strong>Parameters</strong></p>
 <ul>
-<li><strong>X</strong>     — <code>pd.DataFrame</code>    </li>
+<li><strong>X</strong>     — <code>IntoDataFrame</code>    </li>
 </ul>
 <p><strong>Returns</strong></p>
 <p><code>pd.Series</code>:     The predicted labels.</p>
